@@ -18,10 +18,7 @@ export default function () {
             <Route path="/profile">
                 {auth.isAuthenticated ?
                     <Profile /> :
-                    <Redirect
-                        to={{
-                            pathname: "/login"
-                        }}
+                    <Redirect to={{ pathname: "/login" }}
                     />}
             </Route>
             <Route path="/login">

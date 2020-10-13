@@ -38,11 +38,7 @@ export default function FormLogin() {
                 </Button>
             </Form>
             {auth.isAuthenticated ?
-                <Redirect
-                    to={{
-                        pathname: "/profile"
-                    }}
-                />
+                <Redirect to={{ pathname: "/profile" }} />
                 :
                 null
             }
